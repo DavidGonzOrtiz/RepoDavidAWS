@@ -13,4 +13,4 @@ artifacts:
   files:
     - '**/*'
   base-directory: publish
-  name: publish.zip
+  name: application.zip
