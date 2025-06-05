@@ -5,9 +5,12 @@ phases:
       dotnet: 8.0
   build:
     commands:
+      - echo "Restaurando dependencias..."
       - dotnet restore
-      - dotnet publish -c Release -o output
+      - echo "Publicando la aplicación en modo Release..."
+      - "dotnet publish -c Release -o ./publish"
 artifacts:
   files:
     - '**/*'
-  base-directory: output
+  base-directory: publish
+  name: publish.zip
