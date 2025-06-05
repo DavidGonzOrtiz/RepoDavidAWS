@@ -17,77 +17,77 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MiAppMvc
 build_property.RootNamespace = MiAppMvc
-build_property.ProjectDir = D:\Proyectos\Amazon\MiAppMvc\MiAppMvc\
+build_property.ProjectDir = C:\Proyectos\Amazon\RepoDavidAWS\MiAppMvc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Proyectos\Amazon\MiAppMvc\MiAppMvc
+build_property.MSBuildProjectDirectory = C:\Proyectos\Amazon\RepoDavidAWS\MiAppMvc
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Empresa/AgregarEvento.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Empresa/AgregarEvento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxBZ3JlZ2FyRXZlbnRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Empresa/EditarEvento.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Empresa/EditarEvento.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxFZGl0YXJFdmVudG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Empresa/Index.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Empresa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Home/Index.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Home/InicioSesion.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Home/InicioSesion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaW9TZXNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Home/Privacy.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Home/RegistroWeb.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Home/RegistroWeb.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Ryb1dlYi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Home/VerEventos.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Home/VerEventos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZXJFdmVudG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Shared/Error.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Usuarios/EditarPerfil.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Usuarios/EditarPerfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdGFyUGVyZmlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Usuarios/Index.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Usuarios/ModificarPassword.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Usuarios/ModificarPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcTW9kaWZpY2FyUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/_ViewImports.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/_ViewStart.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyectos/Amazon/MiAppMvc/MiAppMvc/Views/Shared/_Layout.cshtml]
+[C:/Proyectos/Amazon/RepoDavidAWS/MiAppMvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-sbdsp9df11

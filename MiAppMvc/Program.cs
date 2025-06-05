@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.WebHost.UseUrls("http://*:5000");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,13 +21,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 
 var app = builder.Build();
-
-// ✅ Este bloque se encarga de aplicar las migraciones al iniciar la app
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<DbContextEventos>();
-    db.Database.Migrate(); // Aplica las migraciones y crea tablas si no existen
-}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

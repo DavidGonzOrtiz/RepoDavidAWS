@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiAppMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6575184b9594c39b589145fa18e8fbd79838310")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6e81fed8719f4f4d1b97eef8da8d9ba1df15600")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiAppMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiAppMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

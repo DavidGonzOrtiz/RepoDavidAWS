@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Proyectos\\Amazon\\MiAppMvc\\",
+  "WorkspaceRootPath": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|c:\\proyectos\\amazon\\repodavidaws\\miappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\models\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|c:\\proyectos\\amazon\\repodavidaws\\miappmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|c:\\proyectos\\amazon\\repodavidaws\\miappmvc\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|c:\\proyectos\\amazon\\repodavidaws\\miappmvc\\models\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\models\\empresa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\views\\empresa\\agregarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|c:\\proyectos\\amazon\\repodavidaws\\miappmvc\\views\\empresa\\agregarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\views\\empresa\\agregarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\views\\empresa\\editarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|c:\\proyectos\\amazon\\repodavidaws\\miappmvc\\views\\empresa\\editarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\views\\empresa\\editarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|c:\\proyectos\\amazon\\repodavidaws\\miappmvc\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -38,17 +38,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 11,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:618693198:0:{13143d73-808b-4a2f-bebb-ccbe9c93fe37}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Program.cs",
+              "DocumentMoniker": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Program.cs",
               "RelativeDocumentMoniker": "MiAppMvc\\Program.cs",
-              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Program.cs",
+              "ToolTip": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Program.cs",
               "RelativeToolTip": "MiAppMvc\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T08:35:14.518Z",
               "EditorCaption": ""
@@ -57,22 +101,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Empresa.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Models\\Empresa.cs",
+              "DocumentMoniker": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Models\\Empresa.cs",
               "RelativeDocumentMoniker": "MiAppMvc\\Models\\Empresa.cs",
-              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Models\\Empresa.cs",
+              "ToolTip": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Models\\Empresa.cs",
               "RelativeToolTip": "MiAppMvc\\Models\\Empresa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T07:53:00.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-05T07:53:00.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\appsettings.json",
+              "DocumentMoniker": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\appsettings.json",
               "RelativeDocumentMoniker": "MiAppMvc\\appsettings.json",
-              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\appsettings.json",
+              "ToolTip": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\appsettings.json",
               "RelativeToolTip": "MiAppMvc\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -83,22 +126,21 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AgregarEvento.cshtml",
-              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
               "RelativeDocumentMoniker": "MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
-              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
+              "ToolTip": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
               "RelativeToolTip": "MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T10:57:56.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T10:57:56.813Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "EditarEvento.cshtml",
-              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
               "RelativeDocumentMoniker": "MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
-              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
+              "ToolTip": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
               "RelativeToolTip": "MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -108,9 +150,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\Index.cshtml",
+              "DocumentMoniker": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Views\\Empresa\\Index.cshtml",
               "RelativeDocumentMoniker": "MiAppMvc\\Views\\Empresa\\Index.cshtml",
-              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\Index.cshtml",
+              "ToolTip": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Views\\Empresa\\Index.cshtml",
               "RelativeToolTip": "MiAppMvc\\Views\\Empresa\\Index.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAuwHkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -118,16 +160,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmpresaController.cs",
-              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Controllers\\EmpresaController.cs",
+              "DocumentMoniker": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Controllers\\EmpresaController.cs",
               "RelativeDocumentMoniker": "MiAppMvc\\Controllers\\EmpresaController.cs",
-              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Controllers\\EmpresaController.cs",
+              "ToolTip": "C:\\Proyectos\\Amazon\\RepoDavidAWS\\MiAppMvc\\Controllers\\EmpresaController.cs",
               "RelativeToolTip": "MiAppMvc\\Controllers\\EmpresaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T15:19:10.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T15:19:10.525Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 650,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
