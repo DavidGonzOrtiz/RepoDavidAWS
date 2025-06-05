@@ -1,0 +1,105 @@
+﻿@model MiAppMvc.ViewModel.EditarEventoViewModel
+
+<style>
+    .form-label {
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+    .form-control {
+        border: 1px solid #ced4da;
+        background-color: #ffffff;
+        color: #2c3e50;
+        border-radius: 8px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #5a6894;
+            box-shadow: 0 0 6px rgba(90, 104, 148, 0.3);
+            background-color: #ffffff;
+            color: #2c3e50;
+        }
+
+    .btn-primary {
+        background-color: #2c3e50;
+        border: none;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 6px 14px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #34495e;
+        }
+
+    .btn-secondary {
+        background-color: #bdc3c7;
+        border: none;
+        font-weight: 600;
+        border-radius: 8px;
+        padding: 6px 14px;
+        color: #2c3e50;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-secondary:hover {
+            background-color: #a6acaf;
+            color: #2c3e50;
+        }
+
+    .text-danger {
+        font-weight: 600;
+        color: #c0392b !important;
+    }
+
+    .container-edit {
+        max-width: 600px;
+        margin: 2rem auto;
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 15px;
+        border: 1px solid #dee2e6;
+        color: #2c3e50;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+</style>
+
+<div class="container-edit">
+    <h2 class="text-center mb-4">Editar Evento</h2>
+
+    <form asp-action="EditarEvento" method="post" novalidate>
+        <input type="hidden" asp-for="EventoId" />
+
+        <div class="mb-3">
+            <label asp-for="EventoName" class="form-label"></label>
+            <input asp-for="EventoName" class="form-control" />
+            <span asp-validation-for="EventoName" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="FechaInicio" class="form-label"></label>
+            <input asp-for="FechaInicio" class="form-control" type="datetime-local" />
+            <span asp-validation-for="FechaInicio" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="FechaFin" class="form-label"></label>
+            <input asp-for="FechaFin" class="form-control" type="datetime-local" />
+            <span asp-validation-for="FechaFin" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Description" class="form-label"></label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>

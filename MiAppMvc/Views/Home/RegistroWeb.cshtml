@@ -1,0 +1,166 @@
+﻿@model MiAppMvc.ViewModel.EmpresaUsuario
+
+<style>
+    .btn-custom {
+        background-color: black;
+        border: none;
+        color: white;
+        font-weight: 600;
+        margin-top: 20px;
+        width: auto;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-custom:hover {
+            background-color: dodgerblue;
+        }
+
+    .card-form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+        border: 1px solid #dee2e6;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        background-color: #ffffff;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .form-control::placeholder {
+        color: #adb5bd;
+    }
+
+    .toggle-btn {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-outline-secondary {
+        border-color: black;
+        color: black;
+        font-weight: 600;
+    }
+
+        .btn-outline-secondary:hover {
+            background-color: rgba(107, 121, 173, 0.15);
+            color: dodgerblue;
+        }
+</style>
+
+<div class="container mt-5">
+    <h1 class="display-5 text-center mb-4" style="color: #2c3e50;">Registrarse</h1>
+
+    @if (TempData["EXITO"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["EXITO"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ERROR"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ERROR"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Formulario Empresas -->
+    <div id="formEmpresas" class="card-form">
+        <h4 class="text-center text-secondary mb-4">Registro Empresa</h4>
+        <form asp-action="RegistroWeb" method="post">
+            <input type="hidden" name="tipoRegistro" value="registroEmpresas" />
+
+            <div class="mb-3">
+                <label asp-for="Empresa.Nombre" class="form-label"></label>
+                <input asp-for="Empresa.Nombre" class="form-control" type="text" placeholder="Nombre de la Empresa" />
+                <span asp-validation-for="Empresa.Nombre" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Empresa.UserName" class="form-label"></label>
+                <input asp-for="Empresa.UserName" class="form-control" type="email" placeholder="Correo Electrónico" />
+                <span asp-validation-for="Empresa.UserName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Empresa.Password" class="form-label"></label>
+                <input asp-for="Empresa.Password" type="password" class="form-control" placeholder="Contraseña" />
+                <span asp-validation-for="Empresa.Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-custom w-100">Registrar Empresa</button>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-outline-secondary w-100 mt-2">Volver</a>
+        </form>
+    </div>
+
+    <!-- Formulario Usuarios -->
+    <div id="formUsuarios" style="display: none;" class="card-form mt-4">
+        <h4 class="text-center text-secondary mb-4">Registro Usuario</h4>
+        <form asp-action="RegistroWeb" method="post">
+            <input type="hidden" name="tipoRegistro" value="registroUsuarios" />
+
+            <div class="mb-3">
+                <label asp-for="Usuarios.FirstName" class="form-label"></label>
+                <input asp-for="Usuarios.FirstName" class="form-control" type="text" placeholder="Nombre" />
+                <span asp-validation-for="Usuarios.FirstName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Usuarios.SecondName" class="form-label"></label>
+                <input asp-for="Usuarios.SecondName" class="form-control" type="text" placeholder="Apellidos" />
+                <span asp-validation-for="Usuarios.SecondName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Usuarios.UserName" class="form-label"></label>
+                <input asp-for="Usuarios.UserName" class="form-control" type="email" placeholder="Correo Electrónico" />
+                <span asp-validation-for="Usuarios.UserName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Usuarios.Password" class="form-label"></label>
+                <input asp-for="Usuarios.Password" type="password" class="form-control" placeholder="Contraseña" />
+                <span asp-validation-for="Usuarios.Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-custom w-100">Registrar Usuario</button>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-outline-secondary w-100 mt-2">Volver</a>
+        </form>
+    </div>
+
+    <!-- Botón para cambiar entre Usuario y Empresa -->
+    <div class="toggle-btn">
+        <button id="buttonChangeForm" type="button" class="btn-custom">Cambiar a Usuario</button>
+    </div>
+</div>
+
+<script>
+    const formEmpresas = document.getElementById("formEmpresas");
+    const formUsuarios = document.getElementById("formUsuarios");
+    const button = document.getElementById("buttonChangeForm");
+
+    let show = true;
+
+    button.addEventListener("click", () => {
+        if (show) {
+            formEmpresas.style.display = "none";
+            formUsuarios.style.display = "block";
+            button.textContent = "Cambiar a Empresa";
+        } else {
+            formEmpresas.style.display = "block";
+            formUsuarios.style.display = "none";
+            button.textContent = "Cambiar a Usuario";
+        }
+        show = !show;
+    });
+</script>

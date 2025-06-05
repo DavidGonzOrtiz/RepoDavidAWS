@@ -1,0 +1,6 @@
+﻿body {
+    background-image: url('/images/ImagenFondo.jpg');
+    background: url('/images/ImagenFondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+}

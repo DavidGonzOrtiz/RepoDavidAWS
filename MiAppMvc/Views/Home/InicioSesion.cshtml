@@ -1,0 +1,170 @@
+﻿@model MiAppMvc.ViewModel.EmpresaUsuario
+
+<style>
+    .container {
+        max-width: 400px;
+        margin-top: 3rem;
+        color: black; /* Cambiado a negro */
+    }
+
+    h1.display-4 {
+        color: black !important; /* Negro */
+    }
+
+    .card-body {
+        background-color: rgba(255, 255, 255, 0.7); /* más claro */
+        border-radius: 16px; /* igual que editar perfil */
+        padding: 2rem;
+        border: 1px solid rgba(107, 121, 173, 0.5); /* ligeramente más fuerte */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        margin-bottom: 1.5rem;
+        color: black;
+    }
+
+    h4.card-title {
+        color: black; /* negro */
+        font-weight: 600;
+    }
+
+    .form-label {
+        color: black !important; /* negro */
+        font-weight: 600;
+    }
+
+    .form-control {
+        border: 1px solid rgba(107, 121, 173, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+    }
+
+        .form-control::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .form-control:focus {
+            border-color: #6b79ad;
+            box-shadow: 0 0 0 0.2rem rgba(107, 121, 173, 0.25);
+            background-color: rgba(255, 255, 255, 0.7);
+            color: black;
+        }
+
+    .text-danger {
+        font-weight: 600;
+        color: #ff4d4d;
+    }
+
+    .btn-custom {
+        background-color: black;
+        border: none;
+        color: white;
+        font-weight: 600;
+    }
+
+        .btn-custom:hover {
+            background-color: dodgerblue;
+        }
+
+    .btn-outline-secondary {
+        border-color: black;
+        color: black;
+        font-weight: 600;
+    }
+
+        .btn-outline-secondary:hover {
+            background-color: rgba(107, 121, 173, 0.15);
+            color: dodgerblue;
+        }
+</style>
+
+
+<div class="container">
+
+    @if (TempData["EXITO"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["EXITO"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ERROR"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ERROR"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <h1 class="display-4 text-center mb-5">Inicio de Sesión</h1>
+
+    <!-- Formulario Empresas -->
+    <div id="formEmpresas" class="card-body">
+        <h4 class="card-title mb-4 text-center">Iniciar sesión como Empresa</h4>
+        <form asp-action="InicioSesion" method="post">
+            <input type="hidden" name="tipoLogin" value="formEmpresas" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Empresa.UserName" class="form-label"></label>
+                <input asp-for="Empresa.UserName" class="form-control" placeholder="Correo electrónico" />
+                <span asp-validation-for="Empresa.UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Empresa.Password" class="form-label"></label>
+                <input asp-for="Empresa.Password" type="password" class="form-control" placeholder="Contraseña" />
+                <span asp-validation-for="Empresa.Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-custom w-100">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <!-- Formulario Usuarios -->
+    <div id="formUsuarios" style="display: none;" class="card-body">
+        <h4 class="card-title mb-4 text-center">Iniciar sesión como Usuario</h4>
+        <form asp-action="InicioSesion" method="post">
+            <input type="hidden" name="tipoLogin" value="formUsuarios" />
+
+            <div class="form-group mb-3">
+                <label asp-for="Usuarios.UserName" class="form-label"></label>
+                <input asp-for="Usuarios.UserName" class="form-control" placeholder="Correo electrónico" />
+                <span asp-validation-for="Usuarios.UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Usuarios.Password" class="form-label"></label>
+                <input asp-for="Usuarios.Password" type="password" class="form-control" placeholder="Contraseña" />
+                <span asp-validation-for="Usuarios.Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-custom w-100">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <!-- Botón para cambiar de formulario -->
+    <div class="d-flex justify-content-center mt-4">
+        <button id="buttonChangeForm" type="button" class="btn btn-outline-secondary w-100">
+            Iniciar Sesión como Usuario
+        </button>
+    </div>
+</div>
+
+<script>
+    const buttonChange = document.getElementById("buttonChangeForm");
+    const formEmpresas = document.getElementById("formEmpresas");
+    const formUsuarios = document.getElementById("formUsuarios");
+
+    buttonChange.addEventListener("click", () => {
+        const isEmpresasVisible = formEmpresas.style.display !== "none";
+
+        if (isEmpresasVisible) {
+            formEmpresas.style.display = "none";
+            formUsuarios.style.display = "block";
+            buttonChange.textContent = "Iniciar Sesión como Empresa";
+        } else {
+            formEmpresas.style.display = "block";
+            formUsuarios.style.display = "none";
+            buttonChange.textContent = "Iniciar Sesión como Usuario";
+        }
+    });
+</script>

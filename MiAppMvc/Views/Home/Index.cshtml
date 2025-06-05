@@ -1,0 +1,58 @@
+﻿@model List<MiAppMvc.Models.Eventos>
+
+@{
+    ViewData["Title"] = "Eventos";
+}
+
+<style>
+    .hero-section {
+        color: black;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 3rem;
+        max-width: 100vw; /* para evitar que el contenido se reduzca */
+        margin-top: 200px;
+    }
+
+        .hero-section h1 {
+            font-size: 4rem; /* más grande */
+            margin-left: 0; /* sin margen a la izquierda */
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+    .event-card {
+        background-color: #2b2b3a;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: transform 0.2s;
+    }
+
+        .event-card:hover {
+            transform: scale(1.02);
+        }
+
+    .event-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .btn-primary {
+        margin-top: 10px;
+        background-color: black;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: dodgerblue;
+        }
+</style>
+
+<div class="hero-section">
+    <h1 class="display-4">Explora nuestros eventos</h1>
+    <p class="lead">Descubre, participa y aprende con las actividades <br />más destacadas de nuestras empresas colaboradoras.<br />
+        ¡NO TE LO PUEDES PERDER!</p>
+    <a asp-action="VerEventos" class="btn btn-primary">Ver Eventos</a>
+</div>

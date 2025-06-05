@@ -1,0 +1,119 @@
+﻿@model List<MiAppMvc.Models.Eventos>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .evento-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .evento-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #6b79ad;
+        border: 1px solid rgba(107, 121, 173, 0.3);
+        width: 100%;
+        max-width: 550px;
+        min-height: 350px;
+        margin: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 1.5rem;
+    }
+
+        .evento-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    .evento-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .evento-subtext {
+        color: black;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .evento-btn {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+        .evento-btn:hover {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+    .card-footer {
+        margin-top: 1.5rem;
+    }
+
+    .card-body ul {
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+        .card-body ul li {
+            margin-bottom: 0.5rem;
+        }
+
+</style>
+
+<div class="container py-5">
+    @if (TempData["EXITO"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["EXITO"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ERROR"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ERROR"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <h2 class="mb-5 text-center evento-title">Eventos Disponibles</h2>
+
+    <div class="evento-container">
+        @foreach (var evento in Model)
+        {
+            <div class="card h-100 evento-card">
+                <div class="card-body">
+                    <h5 class="card-title evento-title">@evento.EventoName</h5>
+                    <p class="card-text evento-subtext">@evento.Description</p>
+                    <ul class="list-unstyled evento-subtext">
+                        <li><strong>Inicio:</strong> @evento.FechaInicio.ToString("dd/MM/yyyy")</li>
+                        <li><strong>Fin:</strong> @evento.FechaFin.ToString("dd/MM/yyyy")</li>
+                        <li><strong>Empresa:</strong> @evento.Empresa?.Nombre</li>
+                    </ul>
+                </div>
+                <div class="card-footer bg-transparent border-0 text-center">
+                    <form asp-controller="Usuarios" asp-action="InscripcionEvento" method="post">
+                        <input type="hidden" name="eventoId" value="@evento.EventoId" />
+                        <input type="hidden" name="usuarioId" value="@ViewBag.UsuarioId" />
+                        <button type="submit" class="btn evento-btn w-100">Inscribirse</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+</div>

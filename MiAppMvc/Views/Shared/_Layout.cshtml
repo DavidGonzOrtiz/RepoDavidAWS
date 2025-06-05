@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - MiAppMvc</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="~/MiAppMvc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Style1.css" />
+
+    <style>
+        /* Navbar personalizado para evitar conflictos */
+        .custom-navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border-bottom: none !important;
+            user-select: none;
+            margin-top: 40px;
+            padding-right: 40px;
+        }
+
+            .custom-navbar .brand {
+                margin-left: 50px;
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .custom-navbar nav {
+                margin-right: 0;
+            }
+
+            .custom-navbar ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 15px;
+            }
+
+            .custom-navbar li {
+                display: flex;
+                align-items: center;
+                color: black;
+            }
+
+            .custom-navbar a,
+            .custom-navbar button {
+                color: black;
+                text-decoration: none;
+                background: none;
+                border: none;
+                font-size: 1rem;
+                cursor: pointer;
+                padding: 5px 8px;
+                display: flex;
+                align-items: center;
+            }
+
+                .custom-navbar a:hover,
+                .custom-navbar button:hover {
+                    color: dodgerblue;
+                    text-decoration: underline;
+                }
+
+            .custom-navbar form {
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="custom-navbar">
+            <nav>
+                <ul>
+                    @if (User.Identity?.IsAuthenticated ?? false)
+                    {
+                        <li>
+                            Bienvenido, <strong>@User.Identity.Name</strong>
+                        </li>
+                        @if (User.FindFirst("RolId")?.Value == "1")
+                        {
+                            <!-- Rol Usuario -->
+                            <li><a href="@Url.Action("Index", "Home")"><i class="fas fa-users"></i>&nbsp;Home</a></li>
+                            <li><a href="@Url.Action("Index", "Usuarios")"><i class="fas fa-users"></i>&nbsp;Mis Eventos</a></li>
+                            <li><a href="@Url.Action("EditarPerfil", "Usuarios")"><i class="fas fa-user-edit"></i>&nbsp;Perfil</a></li>
+                        }
+                        else if (User.FindFirst("RolId")?.Value == "3")
+                        {
+                            <!-- Rol Empresa -->
+                            <li><a href="@Url.Action("Index", "Home")"><i class="fas fa-users"></i>&nbsp;Home</a></li>
+                            <li><a href="@Url.Action("Index", "Empresa")"><i class="fas fa-building"></i>&nbsp;Mis Eventos</a></li>
+                        }
+                        <!-- RolId == 2 es Admin: solo Cerrar Sesión -->
+
+                        <li>
+                            <form action="@Url.Action("CerrarSesion", "Home")" method="post">
+                                <button type="submit" title="Cerrar sesión">
+                                    <i class="fas fa-sign-out-alt"></i>&nbsp;Cerrar Sesión
+                                </button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><a href="@Url.Action("Index", "Home")"><i class="fas fa-users"></i>&nbsp;Home</a></li>
+                        <li><a href="@Url.Action("InicioSesion", "Home")"><i class="fas fa-sign-in-alt"></i>&nbsp;Iniciar Sesión</a></li>
+                        <li><a href="@Url.Action("RegistroWeb", "Home")"><i class="fas fa-user-plus"></i>&nbsp;Registrarse</a></li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

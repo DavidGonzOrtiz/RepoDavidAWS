@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proyectos\\Amazon\\MiAppMvc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\views\\empresa\\agregarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\views\\empresa\\agregarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\views\\empresa\\editarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\views\\empresa\\editarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\views\\empresa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|d:\\proyectos\\amazon\\miappmvc\\miappmvc\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4658C205-09D6-45EC-8F1F-E3750295FDEB}|MiAppMvc\\MiAppMvc.csproj|solutionrelative:miappmvc\\controllers\\empresacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgregarEvento.cshtml",
+              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
+              "RelativeDocumentMoniker": "MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
+              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
+              "RelativeToolTip": "MiAppMvc\\Views\\Empresa\\AgregarEvento.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T10:57:56.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditarEvento.cshtml",
+              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
+              "RelativeDocumentMoniker": "MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
+              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
+              "RelativeToolTip": "MiAppMvc\\Views\\Empresa\\EditarEvento.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T10:57:20.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\Index.cshtml",
+              "RelativeDocumentMoniker": "MiAppMvc\\Views\\Empresa\\Index.cshtml",
+              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Views\\Empresa\\Index.cshtml",
+              "RelativeToolTip": "MiAppMvc\\Views\\Empresa\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T15:19:18.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmpresaController.cs",
+              "DocumentMoniker": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Controllers\\EmpresaController.cs",
+              "RelativeDocumentMoniker": "MiAppMvc\\Controllers\\EmpresaController.cs",
+              "ToolTip": "D:\\Proyectos\\Amazon\\MiAppMvc\\MiAppMvc\\Controllers\\EmpresaController.cs",
+              "RelativeToolTip": "MiAppMvc\\Controllers\\EmpresaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T15:19:10.525Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
